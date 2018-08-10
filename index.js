@@ -13,11 +13,11 @@ const app = express();
 
 
 app.use(cookieSession({
-    maxAge: 30 * 24 * 60 * 60 * 1000, //tells browser how long to use cookies 30days# 
-    keys: [keys.cookieKey] //encrypts cookie key
+    maxAge:30 * 24 * 60 * 60 * 1000, //tells browser how long to use cookies 30days# 
+    keys:[keys.cookieKey] //encrypts cookie key
 }));
 app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.session()); 
 
 
 require('./routes/authroutes')(app);
