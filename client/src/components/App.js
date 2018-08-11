@@ -3,7 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './Header';
 import { connect } from 'react-redux';
 import * as actions from '../actions'
-
+import Landing from './Landing';
 
 
 
@@ -13,8 +13,7 @@ const Dashboard = () =>
 const Survey = () =>
     <h2>Do it Now</h2>
 
-const Landing = () => 
-    <h2>Landing </h2>
+
 
                                 // broswer router can only take one child. 
                                     //JSX will take exact and automatically assume that it is true. 
