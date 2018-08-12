@@ -10,8 +10,8 @@ class Stripe extends Component {
     return(
 
       <StripeCheckout
-        name="Sex"
-        description="$5 dolla me sucky long time"
+        name="Good advice"
+        description="Its Worth every penny"
         amount={500}
         token={token => this.props.handleToken(token)}
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
