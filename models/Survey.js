@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-const recipientSchema = require('./recipient');
+// const recipientSchema = require('./recipient');
 
  //creates model class* 
 
@@ -17,4 +17,4 @@ const surveySchema = new Schema({
 
 });   
 
-mongoose.model('surveys', surverySchema)
+mongoose.model('surveys', surveySchema)
