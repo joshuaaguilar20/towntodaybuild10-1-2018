@@ -10,5 +10,5 @@ const userSchema = new Schema({
 
 });     //able to add any prop. I would like to add to this schema. 
 
-
+//I am so cool
 mongoose.model('users',userSchema);
