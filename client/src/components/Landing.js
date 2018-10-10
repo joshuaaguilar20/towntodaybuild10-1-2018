@@ -52,10 +52,9 @@ import React from 'react';
                   // Here we run a very simple test of the Graph API after login is
                   // successful.  See statusChangeCallback() for when this call is made.
                  testAPI = () => {
-                  window.FB.api('/me', {fields: 'last_name'}, function(response) {
-                    console.log(response);
-                  });
-                };
+                  alert("I told you not to push it");
+                  };
+              
 
 
     render(){
@@ -65,7 +64,7 @@ import React from 'react';
            Will request GeoLocation and fetch events nearest to the user
            <button onClick={this.Geo}>Request Location</button>
            
-           <button onClick={this.testAPI}>Login</button>
+           <button onClick={this.testAPI}>DONT PUSH seriously...</button>
           
         </div>
     );
